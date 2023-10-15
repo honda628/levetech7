@@ -17,8 +17,5 @@ class PostController extends Controller
       return view('posts/show')->with(['post' => $post]);
     }
     
-        public function getPaginateByLimit(int $limit_count = 10)
-        {
-            return $this->orderBY('updated_at', 'DESC')->lomit($limit_count)->get();
-    }
+        
 }
